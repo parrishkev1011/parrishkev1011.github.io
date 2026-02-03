@@ -1,0 +1,90 @@
+/* CapCut Template Dashboard Styles */
+
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --border-color: #444444;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Button Styles */
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid var(--border-color);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    width: 80%;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Summary Card Styles */
+.summary-card {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    color: #ffffff;
+}
