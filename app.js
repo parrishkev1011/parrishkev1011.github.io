@@ -4,6 +4,32 @@
  */
 
 // ===========================
+// Page Initialization
+// ===========================
+document.addEventListener('DOMContentLoaded', function() {
+    // Update last updated timestamp
+    const lastUpdatedElement = document.getElementById('lastUpdated');
+    if (lastUpdatedElement) {
+        const now = new Date();
+        lastUpdatedElement.textContent = now.toLocaleString('en-US', { 
+            month: 'short', 
+            day: 'numeric', 
+            year: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    }
+
+    // Check if site is accessible
+    const statusElement = document.getElementById('siteStatus');
+    if (statusElement) {
+        // If this code is running, the site is live
+        statusElement.textContent = 'Live and Running';
+        statusElement.style.color = '#28a745';
+    }
+});
+
+// ===========================
 // Constants & Configuration
 // ===========================
 const STORAGE_KEY = 'capcut_template_dashboard_v1';
